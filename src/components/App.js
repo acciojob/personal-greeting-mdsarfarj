@@ -9,8 +9,9 @@ function App() {
 
   return (
     <div>
+      <h1>Enter Your name:</h1>
       <input type="text" onChange={handleInputChange} />
-      <h1>{inputValue}</h1>
+      <p>{inputValue}</p>
     </div>
   );
 }
