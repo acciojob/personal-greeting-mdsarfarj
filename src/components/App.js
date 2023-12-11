@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div>
-      <h1>Enter Your name:</h1>
+      <p>Enter Your name:</p>
       <input type="text" onChange={(event)=>setInputValue(event.target.value)} />
     
     {inputValue ? <p>Hello {inputValue}!</p> : ""}
