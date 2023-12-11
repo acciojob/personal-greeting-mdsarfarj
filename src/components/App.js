@@ -1,21 +1,15 @@
 import React, { useState } from 'react';
-
-function App() {
-  const [inputValue, setInputValue] = useState('');
-
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
+const App = () => {
+  const [input, setInput] = useState("");
 
   return (
     <div>
-      <p>Enter Your name:</p>
-      <input type="text" onChange={(event)=>setInputValue(event.target.value)} />
-    
-    {inputValue ? <p>Hello {inputValue}!</p> : ""}
-    
+      <p>Enter your name: </p>
+      <input type="text" onChange={(event) => setInput(event.target.value)} />
+      {input ? <p>Hello {input}!</p> : ""}
     </div>
   );
-}
+};
 
 export default App;
+
