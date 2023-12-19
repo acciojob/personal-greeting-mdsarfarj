@@ -4,7 +4,7 @@ const App = () => {
 
   return (
     <div>
-      <p>Enter your name: </p>
+      <p>Enter your name:</p>
       <input type="text" onChange={(event) => setInput(event.target.value)} />
       {input ? <p>Hello {input}!</p> : ""}
     </div>
